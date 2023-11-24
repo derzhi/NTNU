@@ -1,0 +1,33 @@
+PropertyRegistry
+	-ArrayList<Property>
+
+	+PropertyRegistry(ArrayList<Property>): PropertyRegistry
+	+addProperty(): void
+	+removeProperty(): void
+	+getSumProperties(): int
+	+getPropertyByID(municipalityNumber: int, lotNumber: int, sectionNumber: int): Property
+	+getAveragePropertiesArea(): double
+	+getPropertiesByLotNumber(lotNumber: int): ArrayList<Property>
+Property
+	-municipalityNumber: int
+	-municipalityName: String
+	-lotNumber: int
+	-sectionNumber: int
+	-name: String
+	-areaPerSquareMeter: double
+	-ownerName: String
+
+	+Property(): Property
+	+getMunicipalityNumber(): int
+	+getMunicipalityName(): String
+	+getLotNumber(): int
+	+getSectionNumber(): int
+	+getName(): String
+	+getAreaPerSquareMeter(): double
+	+getOwnerName(): String
+	+getPropertyID(): String
+Main
+	-
+
+Property-->Main
+PropertyRegistry-->Main
